@@ -1,4 +1,4 @@
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
+if [[ $OSTYPE == linux-gnu* ]]; then
 	arch=$(uname -m)
 	if [[ "$arch" == "aarch64" ]]; then
 		cp "$( dirname "${BASH_SOURCE[0]}" )"/node-linuxaarch64 "$( dirname "${BASH_SOURCE[0]}" )"/node
